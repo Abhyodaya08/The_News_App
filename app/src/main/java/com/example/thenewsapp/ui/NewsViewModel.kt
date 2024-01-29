@@ -19,7 +19,7 @@ class NewsViewModel(app: Application, val newsRepository: NewsRepository):  Andr
 
     val headlines: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var headlinesPage=1
-    var headlinesResponse: NewsResponse? = null
+   private var headlinesResponse: NewsResponse? = null
 
     val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var searchNewsPage = 1
